@@ -88,10 +88,10 @@ export default class ApplicationController extends Controller {
   }
 
   columnDefinitions = [
-    { name: "Title", fieldName: "title", minWidth: 50 },
-    { name: "Publication Year", fieldName: "publicationYear", minWidth: 5 },
-    { name: "Pages", fieldName: "pages", minWidth: 8 },
-    { name: "Author", fieldName: "author", minWidth: 50 }
+    { name: "Title", fieldName: "title", width: "50%" },
+    { name: "Publication Year", fieldName: "publicationYear", width: "200px" },
+    { name: "Pages", fieldName: "pages", width: "100px" },
+    { name: "Author", fieldName: "author", width: "20%" }
   ];
 
 }

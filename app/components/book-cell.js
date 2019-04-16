@@ -1,4 +1,5 @@
 import Component from '@glimmer/component';
+import { htmlSafe } from '@ember/string';
 
 export default class BookCellComponent extends Component {
   get displayValue(){
@@ -6,4 +7,11 @@ export default class BookCellComponent extends Component {
     let book = this.args.book
     return book[fieldNameValue]
   }
+
+  get columnStyle() {
+    /* Note: You must implement #escapeCSS. */
+    let widthValue = this.args.width;
+    return htmlSafe(`width: ${widthValue}`);
+  }
+
 }

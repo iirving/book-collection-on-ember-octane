@@ -2,9 +2,9 @@
     class="{{if this.isSelected "selected"}} {{if this.isStriped "zebra"}}" >
 
   {{#each @columnDefinitions as |column index|}}
-    <BookCell @book={{@book}} @fieldName={{column.fieldName}} @minWidth={{column.minWidth}} />
+    <BookCell @book={{@book}} @fieldName={{column.fieldName}} @width={{column.width}} />
   {{/each}}
-  <td>
+  <td class="actionCell">
     {{!-- <button {{action @reserveBookAction @book}}>{{@eserveBookToggleText}}</button> --}}
 
     {{#if this.isBookReserved}}

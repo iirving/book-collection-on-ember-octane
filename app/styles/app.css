@@ -49,6 +49,12 @@ button:disabled:hover {
   margin: 5px;
 }
 
+.container {
+  margin: auto;
+  max-width: 560px;
+}
+
+
 .selected {
   font-weight: bold;
   background-color: #DFDFDF;
@@ -72,7 +78,7 @@ thead {
 thead td{
   font-weight: bold;
   background-color: #DFDFDF;
-  width: 100%;
+  /* width: 100%; */
 }
 
 tbody {
@@ -84,12 +90,15 @@ tbody tr  {
   /* flex-wrap: wrap; */
   padding: 10px;
   flex-grow: 1;
-  width: 100%;
+  /* width: 100%; */
   cursor: pointer;
 }
 tbody td{
   width: 100%;
 }
+
+td.actionCell { width: 16.6%; }
+
 
 tr.zebra {
   background-color: #EEE;
@@ -104,9 +113,9 @@ tr.selected td {
   background-color: #CCF;
 }
 
-.table-row button {
+tbody td button {
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0px 5px;
+  margin: 10px 5px;
 }
 

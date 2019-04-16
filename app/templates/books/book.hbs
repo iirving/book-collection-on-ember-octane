@@ -2,7 +2,10 @@
   <h1>{{this.model.title}}</h1>
   <div class="book-display">
     <div class="book-image">
-      <img src="http://covers.openlibrary.org/b/isbn/{{this.model.ISBN}}-M.jpg" alt="">
+      <img
+        src="http://covers.openlibrary.org/b/isbn/{{this.model.ISBN}}-M.jpg"
+        alt="Cover of {{this.model.title}} by {{this.model.author}}"
+      >
     </div>
     <div class="book-info">
       <p>A book by <strong>{{this.model.author}}</strong></p>
