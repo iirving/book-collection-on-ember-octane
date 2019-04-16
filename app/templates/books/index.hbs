@@ -1,0 +1,68 @@
+<h1>Book Collection</h1>
+
+<div class="bulk-actions">
+  <button {{action this.reserveAll}} disabled={{this.noBooksSelected}}>Reserve Selected</button>
+  <button {{action this.unreserveAll}} disabled={{this.noBooksSelected}}>Unreserve Selected</button>
+  <button {{action this.selectAll}} disabled={{this.allBooksSelected}}>Select All</button>
+  <button {{action this.unselectAll}} disabled={{this.noBooksSelected}}>Unselect All</button>
+</div>
+
+
+
+<table border="1">
+  <thead>
+    {{#each this.columnDefinitions as |column|}}
+      <SortableHeader
+        @columnDefinition={{column}}
+        @sortBooks={{action this.sortBooks}}
+        @sortedBy={{this.sortProperty}}
+        @isReversed={{this.isReversed}}
+      />
+    {{/each}}
+    <td>Actions</td>
+  </thead>
+
+  <tbody>
+    {{#each this.shownBooks as |book index|}}
+      <BookRow
+        @columnDefinitions={{this.columnDefinitions}}
+        @book={{book}}
+        @toggleBookSelection={{this.toggleBookSelection}}
+        @selectedBookIds={{this.selectedBookIds}}
+        @index={{index}}
+        @toggleBookReservation={{this.toggleBookReservation}}
+        @reservedBooksId={{this.reservedBooksId}}
+        @
+      />
+    {{/each}}
+  </tbody>
+</table>
+
+<h3>Reserved Books</h3>
+<table border="1">
+  <thead>
+    {{#each this.columnDefinitions as |column|}}
+      <SortableHeader
+        @columnDefinition={{column}}
+        @sortBooks={{action this.sortBooks}}
+        @sortedBy={{this.sortProperty}}
+        @isReversed={{this.isReversed}}
+      />
+    {{/each}}
+    <td>Actions</td>
+  </thead>
+
+  <tbody>
+    {{#each this.reservedBooks as |book index|}}
+      <BookRow
+        @columnDefinitions={{this.columnDefinitions}}
+        @book={{book}}
+        @toggleBookSelection={{this.toggleBookSelection}}
+        @selectedBookIds={{this.selectedBookIds}}
+        @index={{index}}
+        @toggleBookReservation={{this.toggleBookReservation}}
+        @reservedBooksId={{this.reservedBooksId}}
+      />
+    {{/each}}
+  </tbody>
+</table>

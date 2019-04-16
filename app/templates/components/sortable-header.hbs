@@ -1,0 +1,10 @@
+<td class="{{if isSelected 'selected'}}" {{action @sortBooks @columnDefinition.fieldName}}>
+  {{@columnDefinition.name}}
+  {{#if isSelected}}
+    {{#if @isReversed}}
+      &uarr;
+    {{else}}
+      &darr;
+    {{/if}}
+  {{/if}}
+</td>

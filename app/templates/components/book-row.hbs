@@ -1,0 +1,18 @@
+<tr {{action @toggleBookSelection @book}}
+    class="{{if this.isSelected "selected"}} {{if this.isStriped "zebra"}}" >
+
+  {{#each @columnDefinitions as |column index|}}
+    <BookCell @book={{@book}} @fieldName={{column.fieldName}} @minWidth={{column.minWidth}} />
+  {{/each}}
+  <td>
+    {{!-- <button {{action @reserveBookAction @book}}>{{@eserveBookToggleText}}</button> --}}
+
+    {{#if this.isBookReserved}}
+      <button {{action @toggleBookReservation @book}}>Unreserve</button>
+    {{else}}
+      <button {{action @toggleBookReservation @book}}>Reserve</button>
+    {{/if}}
+
+    {{link-to "Vist" 'books.book' @book.id tagName="button"}}
+  </td>
+</tr>

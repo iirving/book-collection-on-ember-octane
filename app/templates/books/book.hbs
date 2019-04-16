@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>{{this.model.title}}</h1>
+  <div class="book-display">
+    <div class="book-image">
+      <img src="http://covers.openlibrary.org/b/isbn/{{this.model.ISBN}}-M.jpg" alt="">
+    </div>
+    <div class="book-info">
+      <p>A book by <strong>{{this.model.author}}</strong></p>
+      <p><strong>{{this.model.pages}}</strong> pages</p>
+      <p>Published in <strong>{{this.model.publicationYear}}</strong></p>
+      {{link-to "Back to Collection" "books" tagName="button"}}
+    </div>
+  </div>
+</div>

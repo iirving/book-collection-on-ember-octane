@@ -1,0 +1,112 @@
+h1 {
+  text-align: center;
+}
+
+.bulk-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.bulk-actions button {
+  padding: 7px;
+  margin: 3px;
+}
+
+
+button {
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #BBE;
+  background-color: #EEF;
+}
+
+button:hover {
+  background-color: #BBE;
+  border-color: #000;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:disabled:hover {
+  background-color: #EEF;
+  border-color: #BBE;
+}
+
+.unclickable {
+  cursor: default;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+}
+.navbar a {
+  margin: 5px;
+}
+
+.selected {
+  font-weight: bold;
+  background-color: #DFDFDF;
+  color: #000;
+  background-color: #D0D0DF;
+}
+
+table {
+  display: table;
+  flex-wrap: wrap;
+  margin: 3em 0;
+  padding: 0;
+  width: 100%;
+}
+
+thead {
+  width: 100%;
+  /* background-color: #DFDFDF; */
+}
+
+thead td{
+  font-weight: bold;
+  background-color: #DFDFDF;
+  width: 100%;
+}
+
+tbody {
+  width: 100%;
+}
+
+tbody tr  {
+  display: table-row;
+  /* flex-wrap: wrap; */
+  padding: 10px;
+  flex-grow: 1;
+  width: 100%;
+  cursor: pointer;
+}
+tbody td{
+  width: 100%;
+}
+
+tr.zebra {
+  background-color: #EEE;
+}
+
+tr.selected td {
+  background-color: #DDF;
+  border-color: #555;
+}
+
+.table-row.zebra.selected .table-cell {
+  background-color: #CCF;
+}
+
+.table-row button {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px 5px;
+}
+
