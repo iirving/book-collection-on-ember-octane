@@ -1,8 +1,8 @@
 <tr {{action @toggleBookSelection @book}}
     class="{{if this.isSelected "selected"}} {{if this.isStriped "zebra"}}"
 >
-  {{#each @columnDefinitions as |column|}}
-    <BookCell @book={{@book}} @fieldName={{column.fieldName}} @width={{column.width}} />
+  {{#each @columnDefinitions as |columnDefinition|}}
+    <BookCell @book={{@book}} @columnDefinition={{columnDefinition}}/>
   {{/each}}
   <td class="actionCell">
     {{!-- <button {{action @reserveBookAction @book}}>{{@eserveBookToggleText}}</button> --}}

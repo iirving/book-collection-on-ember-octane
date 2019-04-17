@@ -93,11 +93,16 @@ tbody tr  {
   /* width: 100%; */
   cursor: pointer;
 }
-tbody td{
+tbody {
   width: 100%;
 }
 
+.publication-year-column { width: "200px" }
+.pages-column { width: "100px" }
+.author-column { width: "20%" }
+
 td.actionCell { width: 16.6%; }
+
 
 
 tr.zebra {
