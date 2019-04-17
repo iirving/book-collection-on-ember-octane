@@ -9,7 +9,6 @@ export default class BookCellComponent extends Component {
   }
 
   get columnStyle() {
-    /* Note: You must implement #escapeCSS. */
     let widthValue = this.args.width;
     return htmlSafe(`width: ${widthValue}`);
   }
