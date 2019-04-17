@@ -1,6 +1,6 @@
 <tr {{action @toggleBookSelection @book}}
-    class="{{if this.isSelected "selected"}} {{if this.isStriped "zebra"}}" >
-
+    class="{{if this.isSelected "selected"}} {{if this.isStriped "zebra"}}"
+>
   {{#each @columnDefinitions as |column index|}}
     <BookCell @book={{@book}} @fieldName={{column.fieldName}} @width={{column.width}} />
   {{/each}}
@@ -13,6 +13,6 @@
       <button {{action @toggleBookReservation @book}}>Reserve</button>
     {{/if}}
 
-    {{link-to "Vist" 'books.book' @book.id tagName="button"}}
+    {{link-to (html-safe "&#128269;") "books.book" @book.id tagName="button"}}
   </td>
 </tr>
