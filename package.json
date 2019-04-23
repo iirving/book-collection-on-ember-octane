@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "description": "Small description for octane-book-app goes here",
-  "repository": "",
+  "repository": "https://github.com/iirving/book-collection-on-ember-octane",
+  "demoURL": "https://iirving.github.io/book-collection-on-ember-octane/",
   "license": "MIT",
   "author": "",
   "directories": {
