@@ -21,7 +21,7 @@ export default class BooksRoute extends Route {
       },
       {
         id: 3,
-        title: "Time Machime",
+        title: "The Time Machine",
         publicationYear: 1895,
         pages: 125,
         author: "H. G. Wells",
