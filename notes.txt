@@ -1,0 +1,6 @@
+
+
+for github pages :
+> commit chnages
+$ember github-pages:commit --message "another try with github pages"
+$git push origin gh-pages:gh-pages
