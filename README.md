@@ -1,7 +1,6 @@
 # octane-book-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a [DEMO app](https://iirving.github.io/book-collection-on-ember-octane/) using the preview version of [The Octane Edition of Ember](https://emberjs.com/editions/octane/) as of April 2019.
 
 ## Prerequisites
 
