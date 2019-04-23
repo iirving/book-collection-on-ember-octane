@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'octane-book-app',
     environment,
-    rootURL: '/',
+    rootURL: '/book-collection-on-ember-octane/',
     locationType: 'auto',
     'ember-cli-string-helpers': {
       only: ['html-safe']
