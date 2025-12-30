@@ -21,7 +21,7 @@
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",
     "@glimmer/component": "^0.14.0-alpha.3",
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^8.2.6",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.12.2",
     "ember-cli": "github:ember-cli/ember-cli#b741f7675d3a55e94e474796bc3c6f66ac7aabac",
