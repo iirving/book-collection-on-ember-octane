@@ -23,7 +23,7 @@
     "@glimmer/component": "^0.14.0-alpha.3",
     "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-auto-import": "^1.2.20",
+    "ember-auto-import": "^1.12.2",
     "ember-cli": "github:ember-cli/ember-cli#b741f7675d3a55e94e474796bc3c6f66ac7aabac",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.7.0",
